@@ -1,0 +1,144 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 容器样式 */
+.container {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* 头部样式 */
+.header {
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 48px;
+    color: #2d3748;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 16px;
+    color: #718096;
+}
+
+/* 搜索引擎选择器 */
+.engine-selector {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.engine-btn {
+    padding: 8px 16px;
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.engine-btn.active {
+    background-color: #4299e1;
+    color: #ffffff;
+    border-color: #4299e1;
+}
+
+.engine-btn:hover:not(.active) {
+    border-color: #4299e1;
+    color: #4299e1;
+}
+
+/* 搜索输入框组 */
+.search-input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    flex: 1;
+    padding: 16px 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.search-btn {
+    padding: 0 24px;
+    background-color: #4299e1;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #3182ce;
+}
+
+/* 热门搜索 */
+.hot-search {
+    font-size: 14px;
+    color: #718096;
+}
+
+.hot-label {
+    margin-right: 10px;
+}
+
+.hot-item {
+    margin: 0 8px;
+    color: #4299e1;
+    text-decoration: none;
+}
+
+.hot-item:hover {
+    text-decoration: underline;
+}
+
+/* 响应式适配 */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 36px;
+    }
+    
+    .search-input-group {
+        flex-direction: column;
+    }
+    
+    .search-btn {
+        padding: 16px 20px;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 兼容所有现代浏览器的 favicon 配置（放在 <head> 标签内） -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- 兼容所有现代浏览器的 favicon 配置（放在 <head> 标签内） -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>全能搜索 - 一站式搜索平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 网站标题 -->
+        <div class="header">
+            <!-- 本地相对路径（推荐）：从当前html文件出发找图片 -->
+            <img src="assets/favicon.ico" alt="你的网络不让我加载" width="120">
+            <h1 class="logo">全能搜索</h1>
+            <p class="slogan">一站式搜索，高效找到你想要的</p>
+        </div>
+
+        <!-- 搜索区域 -->
+        <div class="search-box">
+            <!-- 搜索引擎切换 -->
+            <div class="engine-selector">
+                <button class="engine-btn active" data-engine="baidu">百度</button>
+                <button class="engine-btn" data-engine="bing">必应</button>
+                <button class="engine-btn" data-engine="google">谷歌</button>
+            </div>
+
+            <!-- 搜索输入框 -->
+            <div class="search-input-group">
+                <input type="text" id="search-input" placeholder="请输入搜索关键词..." autocomplete="off">
+                <button id="search-btn" class="search-btn">
+                    <i class="bi bi-search"></i> 搜索
+                </button>
+            </div>
+
+            <!-- 热门搜索 -->
+            <div class="hot-search">
+                <span class="hot-label">热门搜索：</span>
+                <a href="#" class="hot-item">人工智能</a>
+                <a href="#" class="hot-item">Python教程</a>
+                <a href="#" class="hot-item">前端开发</a>
+                <a href="#" class="hot-item">2026最新资讯</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
